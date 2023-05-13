@@ -1,0 +1,24 @@
+{
+    "server": {
+        "name": "hypertest",
+        "imageRef": "649a6095-b042-4a4c-bb37-f4670cb472a3",
+        "root_volume": {
+            "volumetype": "SSD",
+            "size": 16
+        },
+        "data_volumes": [ ],
+        "flavorRef": "s6.xlarge.2",
+        "vpcid": "12e1f6cc-881b-403c-af48-8298d9be0c0b",
+        "security_groups": [
+            {
+                "id": "ac3e5ac4-bf84-48a0-8705-aac86623b99a"
+            }
+        ],
+        "nics": [
+            {
+                "subnet_id": "9ed84108-c8fc-474f-85c2-0e07b9e3a9a8"
+            }
+        ],
+        "count": 1
+    }
+}
