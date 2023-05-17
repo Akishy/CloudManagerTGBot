@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Heebo&display=swap');
+
+/*-------------------------------------------------------------------------*/
+/* Main CSS */
+
+:root {
+	font-size: calc(0.5rem + 0.9vw);
+	font-family: "Trebuchet MS", "Lucida Sans";
+}
+
+
+html {
+	background: #000000;
+}
+
+
+.container_main {
+	/* border: 1px solid #000000; */
+	text-align: center;
+	white-space: normal;
+	color: #ffffff;
+	display: grid;
+	place-itrems: center;
+}
+
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.logo img {
+	height: calc(12rem);
+	width: calc(12rem);
+	/*margin-top: 20px;*/
+	/*margin-bottom: 20px;*/
+}
+
+
+.description_bot_container {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	padding: 1em calc(3em + 2vw);
+	border-radius: 2px;
+}
+
+
+.description {
+	margin: 1em;
+	font-family: 'Heebo', sans-serif;
+	text-align: justify;
+}
+
+.description p {
+	text-indent: 2rem;
+	line-height: 1.5;
+}
+
+
+strong {
+	color: inherit;
+	-webkit-transition: 0.5s ease-in-out;
+
+}
+
+
+
+.description strong:hover {
+	background-color: #07F59E;
+	color: #ffffff;
+	padding: 0 0.5rem ;
+	border-radius: .2em;
+	transition:all 0.5s ease-in-out;
+}
+
+.advantages_bot {
+	font-family: 'Heebo', sans-serif;
+	text-align: left;
+}
+
+
+.advantages_title {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+
+.advantages_list {
+	padding: 1em;
+}
+
+
+.bullet {
+	margin-left: 0;
+	list-style: none;
+	counter-reset: li;
+	padding: 0;
+}
+
+
+.bullet li {
+	position: relative;
+	margin-bottom: 1.5em;
+	border: 3px solid #07e897;
+	padding: 0.6em;
+	border-radius: 4px;
+	background: #000000;
+	color: #ffffff;
+}
+
+
+.bullet li:before {
+	position: absolute;
+	top: -0.7em;
+	padding-left: 0.15rem;
+	padding-right: 0.15rem;
+	font-size: 1rem;
+	font-weight: lighter;
+	color: inherit;
+	background: inherit;
+	border-radius: 50%;
+	counter-increment: li;
+	content: counter(li);
+}
+
+
+.contacts_title {
+	font-size: 1.5rem;
+	color: #07e897
+}
+
+.contacts_title ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+
+.contacts_title li {
+	display: inline-block;
+
+}
+/*-------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+/* Typewriter -> CVE Crawler Bot */
+.title_bot {
+	width: 21ch;
+	animation: typing 2s steps(21), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 1.5rem;
+	color: #07e897;
+}
+
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+    
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+/*-------------------------------------------------------------------------*/
