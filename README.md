@@ -1,6 +1,4 @@
-<p align="center">
-    <img src="URL">
-</p>
+
 
 <h1 align="center">
 Cloud Management - Telegram Bot
